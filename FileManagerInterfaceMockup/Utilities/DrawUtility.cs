@@ -9,6 +9,15 @@ namespace FileManagerInterfaceMockup.Utilities
     // цвет устанавливать в вызывающей функции
     internal class DrawUtility
     {
+        static public void PaintBox(int left, int top, int right, int bottom)
+        {
+            for (int i = top; i<= bottom; i++)
+            {
+                Console.SetCursorPosition(left, i);
+                for (int j = left; j<= right; j++) Console.Write(' ');
+            }
+        }
+
         static public void DrawBox(int left, int top, int right, int bottom)
         {
             Console.SetCursorPosition(left, top);
@@ -34,7 +43,7 @@ namespace FileManagerInterfaceMockup.Utilities
         {
             Console.SetCursorPosition(left, top);
             Console.Write('\u255F');
-            for (int i = left + 1; i < right; i++) Console.Write('\u2550');
+            for (int i = left + 1; i < right; i++) Console.Write('\u2500');
             Console.Write('\u2562');
         }
 
@@ -45,8 +54,9 @@ namespace FileManagerInterfaceMockup.Utilities
             for (int i = top + 1; i < bottom; i++)
             {
                 Console.SetCursorPosition(left, i);
-                Console.Write('\u2551');
+                Console.Write('\u2502');
             }
+            Console.SetCursorPosition(left, bottom);
             Console.Write('\u2534');
         }
     }
