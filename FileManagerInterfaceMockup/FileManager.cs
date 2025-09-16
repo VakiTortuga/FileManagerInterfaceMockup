@@ -35,6 +35,10 @@ namespace FileManagerInterfaceMockup
         public FileManager(List<FileSystemItem> _files)
         {
             files = _files;
+            menuBar = new UI.MenuBar();
+            leftPanel = new UI.LeftFilePanel();
+            rightPanel = new UI.RightFilePanel();
+            settingsBar = new UI.SettingsBar();
         }
 
         // функция для настройки отображения окна консоли
@@ -52,6 +56,7 @@ namespace FileManagerInterfaceMockup
         public void DrawUI()
         {
             this.InitialSettings();
+            menuBar.Draw(0, 0);
         }
     }
 }

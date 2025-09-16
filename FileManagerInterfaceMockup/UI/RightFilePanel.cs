@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FileManagerInterfaceMockup.UI
 {
-    internal class RightFilePanel
+    internal class RightFilePanel : UIPanel
     {
+        override public void Draw(int left, int top)
+        {
+
+        }
     }
 }
