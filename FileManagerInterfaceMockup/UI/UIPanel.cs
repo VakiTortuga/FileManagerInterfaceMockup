@@ -10,6 +10,6 @@ namespace FileManagerInterfaceMockup.UI
     {
         protected ConsoleColor backgroundColorUI;
         protected ConsoleColor foregroundColorUI;
-        abstract public void Draw(int left, int top);
+        abstract public void Draw(int left, int top, int right, int bottom);
     }
 }

@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace FileManagerInterfaceMockup.UI
 {
-    internal class MenuBar : UIPanel
+    internal class MenuBar
     {
         string[] menuList;
 
+        protected ConsoleColor backgroundColorUI;
+        protected ConsoleColor foregroundColorUI;
         private ConsoleColor upperCaseColorUI;
         private string space;
 
@@ -23,7 +25,7 @@ namespace FileManagerInterfaceMockup.UI
             this.menuList = new string[] {"Левая", "Файл", "Диск", "Команды", "Правая" };
         }
 
-        override public void Draw(int left, int top)
+        public void Draw(int left, int top)
         {
             Console.BackgroundColor = this.backgroundColorUI;
             Console.SetCursorPosition(left, top);

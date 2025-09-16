@@ -57,6 +57,8 @@ namespace FileManagerInterfaceMockup
         {
             this.InitialSettings();
             menuBar.Draw(0, 0);
+            leftPanel.Draw(0, 1, 39, 22);
+            rightPanel.Draw(40, 1, 79, 22);
         }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FileManagerInterfaceMockup.UI
 {
-    internal class SettingsBar : UIPanel
+    internal class SettingsBar
     {
-        override public void Draw(int left, int top)
+        public void Draw(int left, int top)
         {
 
         }

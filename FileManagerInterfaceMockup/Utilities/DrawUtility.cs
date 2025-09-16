@@ -30,7 +30,7 @@ namespace FileManagerInterfaceMockup.Utilities
             }
         }
 
-        static public void DrawSeparatorHorisontal(int left, int top, int right)
+        static public void DrawSeparatorHorizontal(int left, int top, int right)
         {
             Console.SetCursorPosition(left, top);
             Console.Write('\u255F');
