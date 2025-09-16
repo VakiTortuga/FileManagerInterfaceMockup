@@ -2,9 +2,16 @@
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            List<FileSystemItem> files = new List<FileSystemItem>();
+            //files.GetFiles();
+
+            FileManager fileManager = new FileManager(files);
+            fileManager.DrawUI();
+
+            Console.ReadKey();
         }
     }
 }
