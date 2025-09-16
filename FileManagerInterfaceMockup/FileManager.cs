@@ -25,6 +25,12 @@ namespace FileManagerInterfaceMockup
 
         // параметры отображения пользовательского интерфейса
 
+        // Компоненты пользовательского интерфейса
+        private UI.MenuBar menuBar;
+        private UI.LeftFilePanel leftPanel;
+        private UI.RightFilePanel rightPanel;
+        private UI.SettingsBar settingsBar;
+
         // конструктор, задающий начальные параметры отображения
         public FileManager(List<FileSystemItem> _files)
         {
