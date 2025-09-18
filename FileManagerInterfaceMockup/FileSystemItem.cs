@@ -18,12 +18,18 @@ namespace FileManagerInterfaceMockup
         {
             Name = string.Empty;
             Type = string.Empty;
+            Size = 0;
+            LastModifiedDate = new DateOnly();
+            LastModifiedTime = new TimeOnly();
         }
 
         public FileSystemItem(string name, string type)
         {
             Name = name;
             Type = type;
+            Size = 0;
+            LastModifiedDate = new DateOnly();
+            LastModifiedTime = new TimeOnly();
         }
 
         public FileSystemItem(string name, string type, long size, DateOnly lastModifiedDate, TimeOnly lastModifiedTime)

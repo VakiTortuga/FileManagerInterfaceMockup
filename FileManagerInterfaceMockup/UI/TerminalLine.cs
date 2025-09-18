@@ -12,8 +12,8 @@ namespace FileManagerInterfaceMockup.UI
         public void Draw(int left, int top)
         {
             Console.BackgroundColor = ConsoleColor.Black;
-            DrawUtility.PaintBox(left, top, Console.BufferWidth, top);
             Console.ForegroundColor = ConsoleColor.White;
+            DrawUtility.PaintBox(left, top, Console.BufferWidth, top);
             Console.SetCursorPosition(left, top);
             Console.WriteLine("C:\\NC>");
         }

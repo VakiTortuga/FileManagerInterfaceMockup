@@ -23,7 +23,7 @@ namespace FileManagerInterfaceMockup
 
         string consoleTitle = "File Manager";
 
-        // параметры отображения пользовательского интерфейса
+        // параметры отображения пользовательского интерфейса (для поддержки более тонкой настройки интерфейса)
 
         // Компоненты пользовательского интерфейса
         private UI.MenuBar menuBar;
@@ -32,7 +32,7 @@ namespace FileManagerInterfaceMockup
         private UI.TerminalLine terminalLine;
         private UI.SettingsBar settingsBar;
 
-        // конструктор, задающий начальные параметры отображения
+        // конструктор файлового менеджера
         public FileManager(List<FileSystemItem> _files)
         {
             files = _files;
@@ -44,7 +44,7 @@ namespace FileManagerInterfaceMockup
         }
 
         // функция для настройки отображения окна консоли
-        public void InitialSettings() 
+        private void InitialSettings() 
         {
             Console.Title = consoleTitle;
             Console.SetWindowSize(windowWidth, windowHight);
@@ -56,7 +56,7 @@ namespace FileManagerInterfaceMockup
         }
 
         // Функция для вывода на экран элементов интерфейса
-        public void DrawUI()
+        public void DrawFileManager()
         {
             this.InitialSettings();
             menuBar.Draw(0, 0);

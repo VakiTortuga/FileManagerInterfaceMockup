@@ -39,9 +39,9 @@ namespace FileManagerInterfaceMockup.UI
 
         override public void Draw(int left, int top, int right, int bottom)
         {
+            // вывод "каркаса"
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.ForegroundColor = ConsoleColor.Cyan;
-            DrawUtility.PaintBox(left, top, right, bottom);
             DrawUtility.DrawBox(left, top, right, bottom);
             DrawUtility.DrawSeparatorHorizontal(left, bottom - 2, right);
             DrawUtility.DrawSeparatorVertical(left + 13, top, bottom - 2);
@@ -52,10 +52,11 @@ namespace FileManagerInterfaceMockup.UI
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.SetCursorPosition(left + ((right - left) / 2) - 3, top);
             Console.Write(" C:\\NC ");
-
+            
             Console.SetCursorPosition(left + 1, top + 2);
             Console.Write("..          \u2502\u25BAКАТАЛОГ\u25C4\u250211.10.02\u2502 19:48");
 
+            // вывод названий колонок
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.SetCursorPosition(left + 1, top + 1);
@@ -67,10 +68,12 @@ namespace FileManagerInterfaceMockup.UI
             Console.SetCursorPosition(left + 33, top + 1);
             Console.Write("Время");
 
+            // вывод выбранного каталога
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.SetCursorPosition(left + 1, bottom - 1);
             Console.Write("..           \u25BAКАТАЛОГ\u25C4 11.10.02  19:48");
 
+            // Вывод таблицы файлов
             for (int i = 0; i < 16; i++)
             {
                 DrawFile(41, i + 4, files[i]);

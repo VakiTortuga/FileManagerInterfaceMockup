@@ -73,9 +73,9 @@ namespace FileManagerInterfaceMockup.UI
         }
         override public void Draw(int left, int top, int right, int bottom)
         {
+            // вывод "каркаса"
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.ForegroundColor = ConsoleColor.Cyan;
-            DrawUtility.PaintBox(left, top, right, bottom);
             DrawUtility.DrawBox(left, top, right, bottom);
             DrawUtility.DrawSeparatorHorizontal(left, bottom - 2, right);
             DrawUtility.DrawSeparatorVertical(left + 13, top, bottom - 2);
@@ -83,6 +83,7 @@ namespace FileManagerInterfaceMockup.UI
             Console.SetCursorPosition(right / 2 - 3, top);
             Console.Write(" C:\\NC ");
 
+            // вывод названий колонок
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.SetCursorPosition(left + 1, top + 1);
             Console.Write("C:\u2193 Имя");
@@ -91,10 +92,12 @@ namespace FileManagerInterfaceMockup.UI
             Console.SetCursorPosition(left + 27, top + 1);
             Console.Write("    Имя");
 
+            // вывод выбранной директории
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.SetCursorPosition(left + 1, bottom - 1);
             Console.Write("..           \u25BAКАТАЛОГ\u25C4 11.10.02  19:48");
 
+            // Вывод таблицы файлов
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 17; j++)
@@ -104,7 +107,7 @@ namespace FileManagerInterfaceMockup.UI
             }
         }
 
-        private void DrawFile(int left, int top, FileSystemItem file)
+        private void DrawFile(int left, int top, FileSystemItem file) 
         {
             string name = file.Name;
             if (name.Length > 11 - file.Type.Length)
