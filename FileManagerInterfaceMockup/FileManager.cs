@@ -29,6 +29,7 @@ namespace FileManagerInterfaceMockup
         private UI.MenuBar menuBar;
         private UI.LeftFilePanel leftPanel;
         private UI.RightFilePanel rightPanel;
+        private UI.TerminalLine terminalLine;
         private UI.SettingsBar settingsBar;
 
         // конструктор, задающий начальные параметры отображения
@@ -38,6 +39,7 @@ namespace FileManagerInterfaceMockup
             menuBar = new UI.MenuBar();
             leftPanel = new UI.LeftFilePanel();
             rightPanel = new UI.RightFilePanel();
+            terminalLine = new UI.TerminalLine();
             settingsBar = new UI.SettingsBar();
         }
 
@@ -59,6 +61,8 @@ namespace FileManagerInterfaceMockup
             menuBar.Draw(0, 0);
             leftPanel.Draw(0, 1, 39, 22);
             rightPanel.Draw(40, 1, 79, 22);
+            terminalLine.Draw(0, 23);
+            settingsBar.Draw(0, 24);
         }
     }
 }

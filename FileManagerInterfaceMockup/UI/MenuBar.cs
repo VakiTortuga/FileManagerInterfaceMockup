@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FileManagerInterfaceMockup.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -28,9 +29,7 @@ namespace FileManagerInterfaceMockup.UI
         public void Draw(int left, int top)
         {
             Console.BackgroundColor = this.backgroundColorUI;
-            Console.SetCursorPosition(left, top);
-            for (int i = 0; i < Console.BufferWidth; i++)
-                Console.Write(' ');
+            DrawUtility.PaintBox(left, top, 79, top);
 
             Console.SetCursorPosition(left, top);
             foreach (string item in menuList)
