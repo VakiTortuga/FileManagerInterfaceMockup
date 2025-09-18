@@ -30,7 +30,7 @@ namespace FileManagerInterfaceMockup.UI
             files.Add(new FileSystemItem("bitmap", "exe"));
             files.Add(new FileSystemItem("clp2bib", "exe"));
             files.Add(new FileSystemItem("dbview", "exe"));
-            files.Add(new FileSystemItem("draw2wmf", "exe"));
+            files.Add(new FileSystemItem("draw2wmfpipipi", "exe"));
             files.Add(new FileSystemItem("drw2wmf", "exe"));
             files.Add(new FileSystemItem("ico2dib", "exe"));
             files.Add(new FileSystemItem("ico2dib", "exe"));
@@ -40,10 +40,10 @@ namespace FileManagerInterfaceMockup.UI
             files.Add(new FileSystemItem("ncedit", "exe"));
             files.Add(new FileSystemItem("ncff", "exe"));
             files.Add(new FileSystemItem("nclabel", "exe"));
-            files.Add(new FileSystemItem("ncmain", "exe"));
-            files.Add(new FileSystemItem("ncnet", "exe"));
-            files.Add(new FileSystemItem("ncsf", "exe"));
-            files.Add(new FileSystemItem("ncsi", "exe"));
+            files.Add(new FileSystemItem("ncmainpipi", "exe"));
+            files.Add(new FileSystemItem("ncnetpipipi", "exe"));
+            files.Add(new FileSystemItem("ncsfpipipi", "exe"));
+            files.Add(new FileSystemItem("ncsipipipi", "exe"));
             files.Add(new FileSystemItem("nczip", "exe"));
             files.Add(new FileSystemItem("packer", "exe"));
             files.Add(new FileSystemItem("paraview", "exe"));
