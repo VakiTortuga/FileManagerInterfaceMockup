@@ -12,10 +12,10 @@ namespace FileManagerInterfaceMockup
         
         // Общие параметры окна консоли
 
-        private short windowHight = 25;
+        private short windowHight = 26;
         private short windowWidth = 80;
 
-        private short bufferHight = 25;
+        private short bufferHight = 26;
         private short bufferWidth = 80;
 
         private ConsoleColor backgroundColor = ConsoleColor.Black;

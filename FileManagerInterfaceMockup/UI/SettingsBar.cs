@@ -22,8 +22,8 @@ namespace FileManagerInterfaceMockup.UI
             this.numForeground = ConsoleColor.White;
             this.textBackground = ConsoleColor.DarkCyan;
             this.textForeground = ConsoleColor.Black;
-            this.settingsList = new string[] { "Помощь", "Вызов", "Чтение",
-                "Правка", "Копия", "НовИмя", "НовКат", "Удал-е", "Меню", "Выход" };
+            this.settingsList = new string[] { "Помощь", "Вызов ", "Чтение",
+                "Правка", "Копия ", "НовИмя", "НовКат", "Удал-е", "Меню  ", "Выход " };
         }
 
         public void Draw(int left, int top)
