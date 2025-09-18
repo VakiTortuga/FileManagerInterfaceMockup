@@ -48,7 +48,8 @@ namespace FileManagerInterfaceMockup
         {
             Console.Title = consoleTitle;
             Console.SetWindowSize(windowWidth, windowHight);
-            Console.SetBufferSize(bufferWidth, bufferHight);
+            if (OperatingSystem.IsWindows())
+                Console.SetBufferSize(bufferWidth, bufferHight);
             Console.BackgroundColor = backgroundColor;
             Console.ForegroundColor = foregroundColor;
             Console.Clear();
