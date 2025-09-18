@@ -18,6 +18,20 @@ namespace FileManagerInterfaceMockup.UI
             DrawUtility.DrawSeparatorHorizontal(left, bottom - 3, right);
             DrawUtility.DrawSeparatorVertical(left + 13, top, bottom - 3);
             DrawUtility.DrawSeparatorVertical(left + 26, top, bottom - 3);
+            Console.SetCursorPosition(right / 2 - 3, top);
+            Console.Write(" C:\\NC ");
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.SetCursorPosition(left + 1, top + 1);
+            Console.Write("C:\u2193 Имя");
+            Console.SetCursorPosition(left + 14, top + 1);
+            Console.Write("    Имя");
+            Console.SetCursorPosition(left + 27, top + 1);
+            Console.Write("    Имя");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.SetCursorPosition(left + 1, bottom - 1);
+            Console.Write("..           \u25BAКАТАЛОГ\u25C4 11.10.02  19:48");
         }
     }
 }

@@ -29,7 +29,7 @@ namespace FileManagerInterfaceMockup.UI
         public void Draw(int left, int top)
         {
             Console.BackgroundColor = this.backgroundColorUI;
-            DrawUtility.PaintBox(left, top, 79, top);
+            DrawUtility.PaintBox(left, top, Console.BufferWidth - 1, top);
 
             Console.SetCursorPosition(left, top);
             foreach (string item in menuList)
@@ -37,6 +37,11 @@ namespace FileManagerInterfaceMockup.UI
                 Console.Write(space);
                 PrintOneWord(item, upperCaseColorUI, foregroundColorUI);
             }
+
+            Console.SetCursorPosition(Console.BufferWidth - 5, top);
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.BackgroundColor = ConsoleColor.Cyan;
+            Console.Write(DateTime.Now.TimeOfDay.ToString());
         }
 
         private void PrintOneWord(string word, ConsoleColor up, ConsoleColor low)
