@@ -15,9 +15,9 @@ namespace FileManagerInterfaceMockup.UI
             Console.ForegroundColor = ConsoleColor.Cyan;
             DrawUtility.PaintBox(left, top, right, bottom);
             DrawUtility.DrawBox(left, top, right, bottom);
-            DrawUtility.DrawSeparatorHorizontal(left, bottom - 3, right);
-            DrawUtility.DrawSeparatorVertical(left + 13, top, bottom - 3);
-            DrawUtility.DrawSeparatorVertical(left + 26, top, bottom - 3);
+            DrawUtility.DrawSeparatorHorizontal(left, bottom - 2, right);
+            DrawUtility.DrawSeparatorVertical(left + 13, top, bottom - 2);
+            DrawUtility.DrawSeparatorVertical(left + 26, top, bottom - 2);
             Console.SetCursorPosition(right / 2 - 3, top);
             Console.Write(" C:\\NC ");
 
