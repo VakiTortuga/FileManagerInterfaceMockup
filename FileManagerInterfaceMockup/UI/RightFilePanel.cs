@@ -20,8 +20,8 @@ namespace FileManagerInterfaceMockup.UI
         private void InitFileList()
         {
             files.Add(new FileSystemItem("123view", "exe", 128380, new DateOnly(2002, 10, 11), new TimeOnly(19, 48)));
-            files.Add(new FileSystemItem("4372ansi", "set", 255, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
-            files.Add(new FileSystemItem("8502ansi", "set", 255, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
+            files.Add(new FileSystemItem("4372ansipippip", "set", 255, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
+            files.Add(new FileSystemItem("8502ansibzjbjh", "set", 255, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
             files.Add(new FileSystemItem("8632ansi", "set", 255, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
             files.Add(new FileSystemItem("8652ansi", "set", 255, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
             files.Add(new FileSystemItem("8662ansi", "set", 255, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
@@ -30,9 +30,9 @@ namespace FileManagerInterfaceMockup.UI
             files.Add(new FileSystemItem("ansi2850", "set", 255, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
             files.Add(new FileSystemItem("ansi2863", "set", 255, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
             files.Add(new FileSystemItem("ansi2865", "set", 255, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
-            files.Add(new FileSystemItem("ansi2866", "set", 255, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
+            files.Add(new FileSystemItem("ansi2866ououou", "set", 255, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
             files.Add(new FileSystemItem("arcview", "exe", 81738, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
-            files.Add(new FileSystemItem("bitmap", "exe", 54805, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
+            files.Add(new FileSystemItem("bitmappippip", "exe", 54805, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
             files.Add(new FileSystemItem("bug", "nss", 16133, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
             files.Add(new FileSystemItem("bungee", "nss", 41914, new DateOnly(1995, 05, 25), new TimeOnly(5, 00)));
         }
@@ -83,7 +83,7 @@ namespace FileManagerInterfaceMockup.UI
             if (name.Length > 11 - file.Type.Length)
             {
                 name = name.Substring(0, 7);
-                name.Insert(8, "~"); // протестить отдельно
+                name = name.Insert(7, "~");
             }
             Console.SetCursorPosition(left, top);
             Console.Write(name);
